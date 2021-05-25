@@ -3,8 +3,5 @@ require 'bike'
 describe Bike do
 bike = Bike.new
 
-  it 'works' do
-    expect(bike).to respond_to(:working?)
-  end
-
+  it {is_expected.respond_to?(:working?)}
 end
